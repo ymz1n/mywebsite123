@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>余旻真 | 個人品牌網站</title>
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --accent: #27ae60;
+            --secondary: #34495e;
+            --light-bg: #f8f9fa;
+        }
+        body {
+            font-family: "PingFang TC", "Microsoft JhengHei", sans-serif;
+            line-height: 1.8; margin: 0; background-color: var(--light-bg); color: var(--primary);
+            scroll-behavior: smooth;
+        }
+        nav {
+            background: white; padding: 1rem; position: sticky; top: 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1); z-index: 1000; text-align: center;
+        }
+        nav a { text-decoration: none; color: var(--secondary); margin: 0 15px; font-weight: bold; font-size: 0.9rem; }
+        nav a:hover { color: var(--accent); }
+
+        header { background: white; padding: 4rem 1rem; text-align: center; }
+        .container { max-width: 900px; margin: 0 auto; padding: 2rem 1rem; }
+        
+        section { margin-bottom: 4rem; padding-top: 2rem; }
+        h2 { border-bottom: 2px solid var(--accent); display: inline-block; padding-bottom: 5px; margin-bottom: 1.5rem; }
+
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        .card { background: white; padding: 1.5rem; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); display: flex; flex-direction: column; }
+        .card h3 { margin-top: 0; color: var(--accent); font-size: 1.2rem; }
+        .tag { display: inline-block; background: #eee; padding: 2px 8px; border-radius: 4px; font-size: 0.8rem; margin-bottom: 10px; align-self: flex-start; }
+        
+        .btn {
+            display: inline-block; background: var(--accent); color: white; padding: 10px 20px;
+            text-decoration: none; border-radius: 5px; margin-top: auto; font-weight: bold;
+            transition: background 0.2s; text-align: center;
+        }
+        .btn:hover { background: #219150; }
+        
+        .btn-view { background: #34495e; font-size: 0.9rem; padding: 8px 15px; margin-top: 15px;}
+        .btn-view:hover { background: #2c3e50; }
+
+        .btn-ai-report { background: #3498db; margin-top: 20px;} /* AI 報告專用藍色按鈕 */
+        .btn-ai-report:hover { background: #2980b9; }
+
+        .highlight-box { background: #e8f4fd; padding: 1rem; border-left: 5px solid #3498db; margin-top: 1rem; border-radius: 4px; }
+
+        @media (max-width: 600px) { .grid { grid-template-columns: 1fr; } }
+        footer { text-align: center; padding: 3rem; background: var(--secondary); color: white; margin-top: 4rem; }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="#portfolio">專案作品</a>
+    <a href="#ai-lab">AI 實驗室</a>
+    <a href="#blog">效率筆記</a>
+    <a href="#about">個人動態</a>
+    <a href="#contact">聯絡我</a>
+</nav>
+
+<header>
+    <h1>余旻真 | Min-Chen Yu</h1>
+    <p>國立屏東科技大學 工業管理系 | 專注於品質管理與系統優化</p>
+    <a href="https://im.npust.edu.tw/" target="_blank" class="btn" style="background:#3498db;">屏科大工管官網</a>
+</header>
+
+<div class="container">
+    
+    <section id="portfolio">
+        <h2>專案作品集 (Portfolio)</h2>
+        <div class="grid">
+            <div class="card">
+                <span class="tag">品質管理分析</span>
+                <h3>冷凍即食食品生產與品管系統</h3>
+                <p>運用「運算思維」將製程拆解為分解、模式識別、抽象化等步驟，並配合品管七大手法建立邏輯化的品質監控模型。</p>
+                <a href="./冷凍即食食品生產與品質管理系統(FINAL).pdf" target="_blank" class="btn btn-view">閱讀完整分析報告 (PDF)</a>
+            </div>
+            <div class="card">
+                <span class="tag">系統實務分析</span>
+                <h3>自動化電子標籤與條碼實習</h3>
+                <p>分析產品結構 (BOM) 管理與自動化撿貨流程，深入探討電子標籤技術如何優化現代倉儲的進銷存邏輯。</p>
+                <a href="./物料管理 (FINAL).pdf" target="_blank" class="btn btn-view">閱讀完整實習報告 (PDF)</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="ai-lab">
+        <h2>AI 與自動化實驗室 (AI Lab)</h2>
+        <div class="card" style="margin-bottom: 20px;">
+            <h3>超越單一提示詞：四大 AI 模型戰力評鑑</h3>
+            <p>建立 100 分制評卷規則，針對內容平衡性、結論清晰度與情境細緻度，深度實測 <strong>ChatGPT, Perplexity, Claude, Grok</strong> 的底層邏輯與輸出戰力。</p>
+            
+            <div class="highlight-box">
+                <strong>核心成果：AI 任務檢傷分類表 (Triage Framework)</strong>
+                <ul>
+                    <li><strong>單一模型模式：</strong> 5 秒鎖定最佳工具，追求零摩擦力與速度。</li>
+                    <li><strong>多工具協作：</strong> 專業疊加、精準至上，適用於跨格式與需查證之專案。</li>
+                </ul>
+            </div>
+            <p>致力於設計「摩擦力最低」的工作流，將 AI 協作轉化為真實的生產力。</p>
+            
+            <a href="https://drive.google.com/file/d/1G9IYCbvsfr9SN5TE0WcfFCm9ha8I_Yju/view?usp=sharing" target="_blank" class="btn btn-ai-report">閱讀完整 AI 實測報告 (Google Drive)</a>
+        </div>
+    </section>
+
+    <section id="blog">
+        <h2>效率思維筆記 (Efficiency Blog)</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>黃金三步驟工作流</h3>
+                <p>將 AI 任務從評估到落地全鏈路解析，終結選擇焦慮，重新定義人機協作的最佳實踐。</p>
+            </div>
+            <div class="card">
+                <h3>ECRS 流程改善撇步</h3>
+                <p>將工業管理中的「取消、合併、重組、簡化」心法，應用於數位工作與生活優化。</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>個人特質與動態 (About & Life)</h2>
+        <div class="card">
+            <p>我是 <strong>ENFP-T</strong> 型的樂觀探索者，細膩的 <strong>雙魚座</strong> 讓我對流程改善充滿熱情。</p>
+            <p><strong>興趣領域：</strong> 看電影、聽音樂。</p>
+            <!-- 新增的 MBTI 按鈕 -->
+            <a href="https://www.16personalities.com/ch/enfp-%E4%BA%BA%E6%A0%BC" target="_blank" class="btn btn-ai-report" style="max-width: fit-content;">探索 ENFP 的性格特質</a>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>合作與聯絡 (Contact)</h2>
+        <div class="card">
+            <p>如果有任何合作機會或想交流工管與 AI 應用知識，歡迎隨時聯絡！</p>
+            <p>📧 Email: <a href="mailto:allyyu319@gmail.com">allyyu319@gmail.com</a></p>
+        </div>
+    </section>
+
+</div>
+
+<footer>
+    <p>&copy; 2026 余旻真 Min-Chen Yu. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
